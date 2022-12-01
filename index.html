@@ -1,0 +1,140 @@
+<html>
+<head>
+<style>
+.menu{
+background:#121212;
+}
+.menu ul{
+list-style:none;
+padding:0 15px;
+}
+.menu ul li{
+position:relative;
+}
+.menu ul li a {
+color:#EDEDED;
+text-decoration:none;
+}
+.menu > ul > li{
+display: inline-block;
+}
+.menu > ul > li > a{
+display:block;
+line-height:40px;
+padding:0 15px;
+}
+.menu ul ul{
+width:220px;
+position:absolute;
+visibility:hidden;
+}
+.menu ul ul li{
+line-height:40px;
+background: red;
+left:-15px;
+}
+.menu ul ul li:hover{
+background:#121212;
+}
+.menu ul li:hover > ul {
+visibility: visible;
+top:100%;
+}
+.menu ul ul ul{
+top:0 !important;
+left:100%;
+}
+
+.slideshow{
+			width: 500px;
+			height: 200px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		.duongvien{
+			width: 1500px;
+			-webkit-animation: slide 9s ease infinite;
+		}
+		.slide{
+			float: left;
+			width: 500px;
+			height: 200px;
+			display: flex;
+		}
+		@-webkit-keyframes slide{
+			30% {margin-left: 0px;}
+			60% {margin-left: -500px;}
+			90% {margin-left: -1000px;}
+
+</style>
+
+</head>
+<body>
+<table border=1 width="1340">
+	<tr>
+		<td colspan="2" align="center"> <img src="ggl.jpg"></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<div class="menu" align="center">
+
+				<ul>
+					<li><a href="#">Menu gồm:</a></li>
+					
+					<li><a href="#">Trang chủ</a></li>
+	
+					<li><a href="#">Laptop</a></li>
+		
+					<li><a href="#">Phụ kiện</a></li>
+		
+					<li><a href="#">Điện Thoại </a>
+				<ul>
+					<li><a href="#">Apple</a></li>
+					<li><a href="#">Samsung</a>
+				<ul>
+						<li><a href="#">S21 5G</a></li>
+						<li><a href="#">Z Flip 3</a></li>
+						<li><a href="#">Galaxy A23</a></li>
+						</li>
+				</ul>
+					<li><a href="#">Vivo</a></li>
+			
+				</ul>
+					</li>
+				</ul>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<div class="slideshow">
+				<div class="duongvien">
+					<div class="slide"><img src="i14.jpg"></div>
+					<div class="slide"><img src="ssf.png"></div>
+					<div class="slide"><img src="vivo.jpg"></div>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2">
+			<h3 align="center">ĐĂNG KÝ MUA IPHONE 14<h3><br>
+			<h5>Họ tên: <input type="text" name="hoten"></h5>
+			<h5>Số CCCD: <input type="text" name="CCCD"></h5>
+			Loại: <input type="radio" name="loai" value="256GB" checked>256 GB
+				<input type="radio" name="loai" value="512GB">512 GB<br><br>
+			Lựa chọn: <input type="checkbox" name="luachon" value="giaohang">Giao hàng
+						<input type="checkbox" name="luachon" value="phukien">Phụ kiện
+						<input type="checkbox" name="luachon" value="hoadon">Hóa đơn<br><br>
+						<input type="button" value="Đặt Hàng" onclick="kiemtra();">
+		</td>
+
+	<td align="center"> <img src="tgdd1.png" width="250" height="150"></td>
+	
+	</tr>
+	<tr>
+	<td align="center"> <img src="fpt.png" width="250" height="150"></td>
+	</tr>
+</table>
+</body>
+</html>
